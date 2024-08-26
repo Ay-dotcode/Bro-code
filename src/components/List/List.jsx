@@ -2,8 +2,10 @@ import PropTypes from 'prop-types';
 import styles from './List.module.css';
 
 function List(props) {
-    const category = props.category;
     const Items = props.items;
+    if (!props.items.length)
+        return null;
+    const category = props.category;
 
     const listItems = Items.map((item) =>
         <li key={item.id}>{item.name}: &nbsp; <b>{item.calories}</b></li>);
@@ -19,6 +21,11 @@ function List(props) {
 List.propTypes = {
     category: PropTypes.string.isRequired,
     items: PropTypes.array.isRequired,
+};
+
+List.defaultProps = {
+    category: 'Category',
+    items: [],
 };
 
 export default List;
