@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <Button onClick={onClick}>Click me</Button>
+      <Button onClick={on}>Click me</Button>
     </>
   );
 }
