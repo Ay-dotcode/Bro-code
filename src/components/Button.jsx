@@ -1,15 +1,27 @@
-function Button(){
+import PropTypes from 'prop-types';
 
-    const styles = {
-            backgroundColor: "hsl(200, 100%, 50%)",
-            color: 'white',
-            padding: '10px 20px',
-            borderRadius: '5px',
-            border: 'none',
-            cursor: 'pointer',
-              }
+function Button(props) {
+  const styles = {
+    color: 'white',
+    border: 'none',
+    cursor: 'pointer',
+    fontWeight: 'bold',
+    borderRadius: '5px',
+    padding: '10px 20px',
+    backgroundColor: "hsl(200, 100%, 50%)",
+  }
 
-    return(<button style={styles}>Click</button>);
+  return (
+    <button type='button'
+      onClick={props.onClick}
+      style={styles}>
+      {props.children}
+    </button>);
 }
+
+Button.propTypes = {
+  children: PropTypes.node.isRequired,
+  onClick: PropTypes.func,
+};
 
 export default Button;
