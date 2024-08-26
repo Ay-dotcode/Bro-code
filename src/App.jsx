@@ -1,11 +1,10 @@
-import Button from "./components/Button";
+import Counter from "./components/Counter/Counter";
 
 function App() {
-  const onClick = (e) => { console.log(e.target) };
 
   return (
     <>
-      <Button onClick={on}>Click me</Button>
+      <Counter />
     </>
   );
 }
