@@ -1,11 +1,11 @@
-import Counter from "./components/Counter/Counter";
+import ToDoList from "./components/ToDoList/ToDoList";
 
 
 function App() {
 
   return (
     <>
-      <Counter />
+      <ToDoList />
     </>
   );
 }
