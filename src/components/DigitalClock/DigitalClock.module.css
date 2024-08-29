@@ -1,4 +1,4 @@
-body {
+/* body {
     margin: 0;
     height: 100vh;
     display: flex;
@@ -10,7 +10,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: url('/src/assets/dark landscape.jpg');
-}
+} */
 
 .clock-container {
     padding: 2rem 1.5rem;

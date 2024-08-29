@@ -1,11 +1,10 @@
-import DigitalClock from "./components/DigitalClock/DigitalClock";
-
+import StopWatch from "./components/StopWatch/StopWatch";
 
 function App() {
 
   return (
     <>
-      <DigitalClock />
+      <StopWatch />
     </>
   );
 }
