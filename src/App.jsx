@@ -1,8 +1,9 @@
-
+import StopWatch from './components/StopWatch/StopWatch';
 function App() {
 
   return (
     <>
+      <StopWatch />
     </>
   );
 }
