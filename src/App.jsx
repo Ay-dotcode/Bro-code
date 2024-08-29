@@ -1,11 +1,11 @@
-import ToDoList from "./components/ToDoList/ToDoList";
+import DigitalClock from "./components/DigitalClock/DigitalClock";
 
 
 function App() {
 
   return (
     <>
-      <ToDoList />
+      <DigitalClock />
     </>
   );
 }
